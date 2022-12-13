@@ -1,6 +1,6 @@
 # Raeo
 
-Trojan written in python.
+Trojan written in python. Raeo will send the grabbed information via discord webhook.
 
 ## Features
 - Discord token info
