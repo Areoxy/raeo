@@ -20,7 +20,7 @@ Trojan written in python.
 
 
 ## Install
-1. Install [Python 3.9>](https://python.org)
+1. Install [Python 3.9 or above](https://python.org)
 2. Edit the **config.py** (components/config.py) and fill it with your infos
 3. Open the CMD and type<br>
 `py -3 builder.py`
