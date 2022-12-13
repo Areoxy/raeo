@@ -21,10 +21,10 @@ Trojan written in python.
 
 ## Install
 1. Install [Python 3.9>](https://python.org)
-2. Edit the config.py (components/config.py) and fill it with your infos
+2. Edit the **config.py** (components/config.py) and fill it with your infos
 3. Open the CMD and type<br>
 `py -3 builder.py`
-4. Check out the *dist* folder
+4. Check out the **dist** folder
 
 
 ## License
