@@ -28,10 +28,9 @@ Trojan written in python. Raeo will send the grabbed information via discord web
 
 ## Example
 
-<img src=""img/discord_token_example.png>
-<img src=""img/system_data_example.png>
-<img src=""img/webcam_example.png>
-
+![discord token](img/discord_token_example.png)
+![discord token](img/system_data_example.png)
+![discord token](img/webcam_example.png)
 
 ## License
 
