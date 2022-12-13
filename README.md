@@ -26,6 +26,12 @@ Trojan written in python. Raeo will send the grabbed information via discord web
 `py -3 builder.py`
 4. Check out the **dist** folder
 
+## Example
+
+<img src=""img/img-1>
+<img src=""img/img-2>
+<img src=""img/img-3>
+
 
 ## License
 
