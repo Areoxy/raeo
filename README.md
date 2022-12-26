@@ -37,6 +37,5 @@ Trojan written in python. Raeo will send the grabbed information via discord web
 Raeo is licensed under the <a href="https://mit-license.org/">MIT License</a>.
 
 
-
-## Errors?
-- Join the [Discord](https://envyre.de)
+## Found a bug or have some questions?
+Join our [Discord](https://discord.gg/9VSEt26ngV)
